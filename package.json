@@ -1,0 +1,23 @@
+{
+  "name": "@angular/bazel",
+  "version": "7.0.0-rc.1-1c561a833c",
+  "description": "Angular - bazel build rules",
+  "author": "angular",
+  "license": "MIT",
+  "dependencies": {
+    "@bazel/typescript": "^0.15.0",
+    "@types/node": "6.0.84",
+    "protobufjs": "5.0.0"
+  },
+  "peerDependencies": {
+    "@angular/compiler-cli": "7.0.0-rc.1-1c561a833c",
+    "typescript": ">=3.1.1 <3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.git"
+  },
+  "ng-update": {
+    "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+  }
+}

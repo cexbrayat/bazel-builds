@@ -1,0 +1,16 @@
+load("@io_bazel_skydoc//skylark:skylark.bzl", "skylark_doc")
+
+skylark_doc(
+    name = "docs",
+    srcs = [
+        "//src:ng_module.bzl",
+        "//src:ng_rollup_bundle.bzl",
+        "//src:ng_setup_workspace.bzl",
+        "//src/ng_package:ng_package.bzl",
+        "//src/protractor:protractor_web_test.bzl",
+    ],
+    format = "html",
+    site_root = "/bazel-builds",
+    strip_prefix = "packages/bazel/",
+    visibility = ["//packages/bazel:__subpackages__"],
+)
